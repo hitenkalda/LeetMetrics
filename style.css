@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1e1e2f;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #2a2a40;
+    padding: 25px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 650px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #e63946;
+    text-align: center;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-input {
+    width: 75%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+#user-input:focus {
+    border-color: #e63946;
+    outline: none;
+}
+
+#search-btn {
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#search-btn:hover {
+    background-color: #d62828;
+    transform: scale(1.05);
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #457b9d;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background: conic-gradient(#457b9d var(--progress-degree, 0%), #2a2a40 0%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circle span {
+    position: relative;
+    z-index: 2;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stats-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: #457b9d;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    color: #f1faee;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #f8f9fa;
+}
