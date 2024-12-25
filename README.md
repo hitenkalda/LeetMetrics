@@ -1,4 +1,4 @@
-# LeetCode Stats Tracker
+# LeetMetrics
 
 A simple web application to fetch and display LeetCode stats using HTML, CSS, and JavaScript.
 
